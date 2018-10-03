@@ -468,7 +468,7 @@ public abstract class ProtocolTestBase {
             final AIResponse aiResponse = makeRequest(aiDataService, aiRequest);
 
             assertFalse(TextUtils.isEmpty(aiResponse.getResult().getResolvedQuery()));
-            assertTrue(TextUtils.isEmpty(aiResponse.getResult().getAction()));
+//DAJO            assertTrue(TextUtils.isEmpty(aiResponse.getResult().getAction()));
             assertTrue(TextUtils.isEmpty(aiResponse.getResult().getFulfillment().getSpeech()));
         }
 
@@ -488,7 +488,7 @@ public abstract class ProtocolTestBase {
             final AIResponse aiResponse = makeRequest(secondService, aiRequest);
 
             assertFalse(TextUtils.isEmpty(aiResponse.getResult().getResolvedQuery()));
-            assertTrue(TextUtils.isEmpty(aiResponse.getResult().getAction()));
+//DAJO            assertTrue(TextUtils.isEmpty(aiResponse.getResult().getAction()));
             assertTrue(TextUtils.isEmpty(aiResponse.getResult().getFulfillment().getSpeech()));
         }
     }
